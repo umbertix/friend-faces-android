@@ -65,15 +65,30 @@
         tools:text="App secret" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sendButton"
         android:layout_width="368dp"
         android:layout_height="41dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:onClick="sendMessage"
         android:text="@string/send"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="368dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="10dp"
+        android:onClick="saveSetting"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="450dp" />
+        app:layout_constraintTop_toBottomOf="@+id/sendButton" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -84,12 +99,12 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="11dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/sendButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText">
+        app:layout_constraintTop_toBottomOf="@+id/user_name">
 
         <RadioButton
             android:id="@+id/radio_wipe"
@@ -126,7 +141,7 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/user_name"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="42dp"
