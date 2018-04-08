@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_id">App ID</string>
+    <string name="app_name">Friend Faces</string>
+    <string name="app_key">App Key</string>
+    <string name="app_secret">App Secret</string>
+    <string name="wipe">Wipe</string>
+    <string name="rainbow">Rainbow</string>
+    <string name="chase">Chase</string>
+    <string name="flash">Flash</string>
+    <string name="user_name">User name</string>
+    <string name="send">Send</string>
+</resources>
